@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import { posts } from '@/data/posts';
 
+export async function generateStaticParams() {
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+// ------------------------------------------------
+
 export default async function BlogDetail({ params }) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
