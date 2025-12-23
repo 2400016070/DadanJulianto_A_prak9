@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Perintah untuk bikin HTML statis
-  basePath: '/DadanJulianto_A_prak9', // WAJIB SAMA dengan nama Repo Mas
+  output: 'export',
+  basePath: '/DadanJulianto_A_prak9', // Sesuaikan nama repo
   images: {
-    unoptimized: true, // Supaya gambar tidak error
+    unoptimized: true,
   },
 };
 
